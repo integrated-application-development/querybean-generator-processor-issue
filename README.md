@@ -1,6 +1,6 @@
 # query-bean-generator-issue
 
-This project illustrate an issue with the ebean query bean generator. Issue as of `ebean` version `15.8.2` can be reproduced by running `mvn compile` on this example project.
+This project illustrate an issue with the ebean query bean generator. Issue as of `ebean` version `15.8.2` can be reproduced by running `mvn compile` on this example project. Issue has been raised at ebean-orm/ebean#3582.
 
 When generating querybeans along side specific other annotation processors (in this case [manifold-exceptions](https://github.com/manifold-systems/manifold/tree/master/manifold-deps-parent/manifold-exceptions)), the `querybean-generator` logs an error while trying to write `embedded.example.EbeanEntityRegister` and fails the build (error details below).
 
